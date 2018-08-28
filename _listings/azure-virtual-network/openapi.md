@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Azure Virtual Network
 x-complete: 1
@@ -81,20 +80,6 @@ paths:
           description: OK
       tags:
       - Load Balancers
-  /subscriptions/{subscriptionId}/providers/Microsoft.Network/loadBalancers:
-    get:
-      summary: Load Balancers List All
-      description: Gets all the load balancers in a subscription.
-      operationId: LoadBalancers_ListAll
-      x-api-path-slug: subscriptionssubscriptionidprovidersmicrosoft-networkloadbalancers-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Load Balancers All
   /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/loadBalancers:
     get:
       summary: Load Balancers List
@@ -112,4 +97,3 @@ paths:
           description: OK
       tags:
       - Load Balancers
----
